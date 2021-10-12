@@ -1,0 +1,30 @@
+{
+  "name": "custom-schematics",
+  "version": "0.0.1",
+  "description": "custom schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
+    "test": "npm run build && node_modules/.bin/jasmine src/**/*_spec.js",
+    "schematics": "schematics"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "publishConfig": {
+    "registry": "https://repo.sniglobalmedia.com/api/npm/npm-releases-local"
+  },
+  "author": "Gabriel Hernandez",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "devDependencies": {
+    "@types/node": "^12.11.1",
+    "@types/jasmine": "~3.5.0",
+    "jasmine": "^3.5.0",
+    "@angular-devkit/core": "^9.1.11",
+    "@angular-devkit/schematics": "^9.1.11",
+    "@angular-devkit/schematics-cli": "^0.901.11",
+    "@schematics/angular": "^9.1.11",
+    "typescript": "~3.9.2"
+  }
+}

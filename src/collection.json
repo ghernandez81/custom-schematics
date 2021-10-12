@@ -1,0 +1,10 @@
+{
+  "$schema": "../dsuite/node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "input-text": {
+      "description": "custom input-text",
+      "factory": "./input-text/index#inputText",
+      "schema": "./input-text/schema.json"
+    }
+  }
+}
